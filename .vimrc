@@ -1,5 +1,8 @@
 set nocompatible              " Don't be compatible with vi
 
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ["ropevim"]
+
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -19,7 +22,7 @@ map <leader>g :GundoToggle<CR>
 map <leader>t :CommandT<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
+" map <leader>r :RopeRename<CR>
 nmap <leader>a <Esc>:Ack!
 map <leader>l :TagbarToggle<CR>
 map <leader>i :set list!<CR> " toggle invisible chars like tab or CR
