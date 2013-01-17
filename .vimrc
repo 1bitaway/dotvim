@@ -51,6 +51,8 @@ nmap <leader>qq :cclose<CR>
 " remove trailing whitespace
 nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 
+let g:pymode_breakpoint_key = '<leader>ü'
+
 cmap w!! w !sudo tee % >/dev/null   "if forgot sudo save with :w!!
 
 
