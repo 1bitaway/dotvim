@@ -10,6 +10,7 @@ call pathogen#helptags()
 let g:snippets_dir = "~/.vim/snippets"
 let mapleader=","
 set listchars=tab:▸\ ,eol:¬
+set hidden
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
