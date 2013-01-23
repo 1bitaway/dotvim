@@ -33,6 +33,10 @@ let g:pep8_map='<leader>8'
 let g:pyflakes_use_quickfix = 0
 let g:CommandTMaxHeight = 10
 
+let g:flake8_max_line_length=120
+
+
+
 " window
 nmap <leader>sw<left>  :topleft  vnew<CR>
 nmap <leader>sw<right> :botright vnew<CR>
