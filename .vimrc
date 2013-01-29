@@ -16,7 +16,6 @@ set hidden
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-
 " mappings
 map <leader>td <Plug>TaskList
 map <leader>g :GundoToggle<CR>
@@ -98,7 +97,8 @@ set cursorline              " have a line indicate the cursor location
 set ruler                   " show the cursor position all the time
 set nostartofline           " Avoid moving cursor to BOL when jumping around
 set virtualedit=block       " Let cursor move past the last char in <C-v> mode
-set scrolloff=3             " Keep 3 context lines above and below the cursor
+set scrolloff=999           " pin cursor in the vertical center of screen
+"set scrolloff=3             " Keep 3 context lines above and below the cursor
 set backspace=2             " Allow backspacing over autoindent, EOL, and BOL
 set showmatch               " Briefly jump to a paren once it's balanced
 set nowrap                  " don't wrap text
