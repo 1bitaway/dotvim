@@ -7,6 +7,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+set dir=~/.vimswap//,/tmp//,.
 let g:snippets_dir = "~/.vim/snippets"
 let mapleader=","
 set listchars=tab:▸\ ,eol:¬
