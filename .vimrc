@@ -1,7 +1,7 @@
 set nocompatible              " Don't be compatible with vi
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ["ropevim"]
+let g:pathogen_disabled = ["ropevim", "minibufexpl"]
 
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -86,11 +86,21 @@ colorscheme molokai
 
 :hi ColorColumn guibg=#2d2d2d ctermbg=246
 
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne=1
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+nnoremap <silent> <c-Right> <c-W>L
+nnoremap <silent> <c-Left> <c-W>H
+nnoremap <silent> <c-Up> <c-W>K
+nnoremap <silent> <c-Down> <c-W>K
+
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1
+"let g:miniBufExplorerMoreThanOne=1
 
 """ Moving Around/Editing
 set cursorline              " have a line indicate the cursor location
