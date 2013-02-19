@@ -198,3 +198,10 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 endif
 
+if has("gui_running")
+    :set guioptions-=m "remove menu bar
+    :set guioptions-=T "remove toolbar
+    :set guioptions-=r "remove right hand scroll bar 
+    :set guifont=Monospace\ 8
+endif
+
